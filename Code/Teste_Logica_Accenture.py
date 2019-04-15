@@ -22,7 +22,7 @@ Exemplos:
 def problema1(vector):
 
     # Count the number os occurences of each number
-    counts = dict((number, vector.count(number)) for number in set(vector))
+    counts = {(number, vector.count(number)) for number in set(vector)}
 
     # Loop over the dictionary and return the number if greater than the half
     # of the length of the vector
@@ -154,7 +154,7 @@ def problema3(numero, limMultiplicacao, modulo):
     # Reverse the order of the list
     mul_list.reverse()
 
-    # Multiply the list lists
+    # Multiply the lists
     result = [a*b for a, b in zip(number, mul_list)]
 
     # Calculate the module 11
