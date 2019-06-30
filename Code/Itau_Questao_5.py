@@ -1,4 +1,3 @@
-#%%
 # Load Libraries
 import pandas as pd
 import numpy as np
@@ -6,11 +5,8 @@ import matplotlib.pyplot as plt
 from scipy.spatial.distance import pdist
 from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
 
-# Defining default Path to read the data
-path = "/home/esssfff/Documents/Git/Challenges/Datasets/"
-
 # Read data
-data = pd.read_csv(path+"dados_Q5.csv")
+data = pd.read_csv("dados_Q5.csv")
 
 # Convert the dato the a distance Matrix
 distanceMatrix = pdist(data)

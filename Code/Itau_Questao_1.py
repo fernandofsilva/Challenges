@@ -1,13 +1,9 @@
-#%%
 # Load Libraries
 import pandas as pd
 from sklearn.model_selection import KFold
 from sklearn.tree import DecisionTreeClassifier
 
-# Defining default Path
-path = "/home/esssfff/Documents/Git/Challenges/Datasets/"
-
-data = pd.read_csv(path+"dados_Q1.csv")
+data = pd.read_csv("dados_Q1.csv")
 
 # Defining target variable
 target = "target"

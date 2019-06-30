@@ -1,14 +1,11 @@
-#%%
-import numpy as np
+# import numpy as np
 import pandas as pd
+
 from scipy import stats
 from sklearn.metrics import f1_score
 from sklearn.linear_model import LogisticRegression
 
-# Defining default Path
-path = "/home/esssfff/Documents/Git/Challenges/Datasets/"
-
-data = pd.read_csv(path+"dados_Q3.csv")
+data = pd.read_csv("dados_Q3.csv")
 
 # Values less than 0.001 will be equal to 0
 data = data.where(data > 0.001, 0)

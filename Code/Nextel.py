@@ -1,17 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-@author: esssfff
-"""
-
-# Importng pandas for data handling
+# Import pandas for data handling
 import pandas as pd
 
-# defining the default path of the files
-path = "/home/esssfff/Documents/Github/Challenges/Datasets/"
-
 # Load the data
-df = pd.read_csv(path+"/data_scientist_test/house_sales.csv")
+df = pd.read_csv("/data_scientist_test/house_sales.csv")
 
 # Check the data
 print(df.describe())

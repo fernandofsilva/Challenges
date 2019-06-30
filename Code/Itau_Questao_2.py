@@ -1,4 +1,3 @@
-#%%
 # Load Libraries
 import pandas as pd
 import numpy as np
@@ -6,10 +5,7 @@ from sklearn.svm import SVR
 from sklearn.model_selection import LeaveOneOut
 from sklearn.metrics import mean_absolute_error
 
-# Defining default Path
-path = "/home/esssfff/Documents/Git/Challenges/Datasets/"
-
-data = pd.read_csv(path+"dados_Q2.csv")
+data = pd.read_csv("dados_Q2.csv")
 
 # Defining target variable
 target = "target"

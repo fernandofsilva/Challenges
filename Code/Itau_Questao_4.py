@@ -1,16 +1,11 @@
-#%%
 import numpy as np
 from sklearn.decomposition import PCA
 
 # Load Libraries
 import pandas as pd
 
-# Defining default Path
-path = "/home/esssfff/Documents/Git/Challenges/Datasets/"
-
 # Load Data
-data = pd.read_csv(path+"dados_Q4.csv")
-del path
+data = pd.read_csv("dados_Q4.csv")
 
 # Initiate the PCA and fit
 pca = PCA().fit(data)
